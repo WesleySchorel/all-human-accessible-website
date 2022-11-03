@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Vervoerregio Amsterdam</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="Afbeeldingen.html"><i class="fa fa-fw fa-photo"></i> Afbeeldingen</a>
+        <a href="Bediening.html"><i class="fa fa-fw fa-keyboard-o"></i> Bediening</a>
+        <a href="Formulieren.html"><i class="fa fa-fw fa-user"></i> Formulieren</a>
+        <a href="Media.html"><i class="fa fa-fw fa-file-image-o"></i> Media</a>
+        <a href="Navigatie.html"><i class="fa fa-fw fa-mouse-pointer"></i> Navigatie</a>
+        <a href="Ontwerp.html"><i class="fa fa-fw fa-paint-brush"></i> Ontwerp</a>
+        <a href="Teksten.html"><i class="fa fa-fw fa-book"></i> Teksten</a>
+    </div>
+
+    <div class="main">
+        <main>
+
+            <div class="topright">
+                <button onclick="myFunction()">Contrast</button>
+            </div>
+
+            <img src="assets/Logo.png" alt="Logo">
+            <p>Verklaring Digitale toegankelijkheid | Navigatie
+                <br>
+                <hr><br>
+                De navigatie is een belangrijk onderdeel van een website. Door te zorgen dat alle bezoekers goed over
+                een website kunnen navigeren, krijgen ze toegang tot alle beschikbare informatie.
+                <br><br>
+                Een gestructureerde en consequente paginaopbouw en skiplinks zorgen dat bezoekers zonder veel moeite
+                over de pagina kunnen navigeren.
+                <br><br>
+            </p>
+            <button class="accordion">Zorg dat afbeeldingen in de code een tekstalternatief kunnen krijgen</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="accordion">Geef afbeeldingen die informatie overdragen een beschrijvend
+                tekstalternatief</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="accordion">Geef complexe afbeeldingen een langere beschrijving</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="accordion">Geef afbeeldingen die ook een link zijn een tekstalternatief dat het doel van de
+                link beschrijft</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="accordion">Zorg dat decoratieve afbeeldingen door hulptechnologieën genegeerd kunnen
+                worden</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="accordion">Gebruik geen afbeeldingen van tekst</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="accordion">Zorg dat bewegende content kan worden gepauzeerd, gestopt of worden
+                uitgezet</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+            <button class="accordion">Gebruik geen content dat meer dan 3 keer per seconde flitst</button>
+            <div class="panel">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <br>
+        </main>
+        <footer>
+            <div id="feedback-button">Vond u deze pagina nuttig?</div>
+            <button onclick="myFunction()" type="button" name="ja-nee-button">Ja</button>
+            <button onclick="myFunction()" type="button" name="ja-nee-button">Nee</button>
+        </footer>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+
+
+
+            function myFunction() {
+                var x = document.getElementById("feedback-button");
+                if (x.innerHTML === "Bedankt voor uw feedback.") {
+                    x.innerHTML = "Vond u deze pagina nuttig?";
+                } else {
+                    x.innerHTML = "Bedankt voor uw feedback.";
+                }
+            }
+        </script>
+<script src="scripts/script.js"></script>
+
+</body>
+
+</html>

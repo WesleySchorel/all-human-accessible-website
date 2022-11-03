@@ -1,0 +1,61 @@
+main ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 1em;
+  }
+  
+  main li {
+    background: white;
+    border: 2px solid #b9005f;
+    width: 16em;
+    height: 12em;
+  }
+  
+  main li:nth-of-type(odd) {
+    background: white;
+  }
+
+
+  .my-checkbox {
+    transform: scale(2);
+    margin-right: 11px;
+  }
+
+
+
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

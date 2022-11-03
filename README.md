@@ -1,29 +1,39 @@
-> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je, zoals altijd, in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# Vervoerregio Amsterdam
+De Vervoerregio Amsterdam verbindt gemeenten en werkt aan een regio waar mensen vlot hun bestemming bereiken. De gemeenten Aalsmeer, Amstelveen, Amsterdam, Diemen, Edam-Volendam, Haarlemmermeer, Landsmeer, Oostzaan, Ouder-Amstel, Purmerend, Uithoorn, Waterland, Wormerland en Zaanstad vormen samen de Vervoerregio Amsterdam. Vanaf 1 januari 2022 zijn gemeente Beemster en gemeente Purmerend samengegaan en bestaat de Vervoerregio sindsdien uit veertien gemeenten.
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+Mijn userstory: Als organisatie wil ik meer informatie over een toegankelijkheidsverbetering kunnen lezen zodat ik beter begrijp waarom en hoe het helpt mijn website/app toegankelijker te maken
 
-## Inhoudsopgave
-
-  * [Beschrijving](#beschrijving)
-  * [Kenmerken](#kenmerken)
-  * [Bronnen](#bronnen)
-  * [Licentie](#licentie)
+## Inhouds Opgave
+* Afbeeldingen: https://wesleyschorel.github.io/the-client-case/Afbeeldingen.html
+* Bediening: https://wesleyschorel.github.io/the-client-case/Bediening.html
+* Formulieren: https://wesleyschorel.github.io/the-client-case/Forumulieren.html
+* Media: https://wesleyschorel.github.io/the-client-case/Media.html
+* Navigatie: https://wesleyschorel.github.io/the-client-case/Navigatie.html
+* Ontwerp: https://wesleyschorel.github.io/the-client-case/Ontwerp.html
+* Teksten: https://wesleyschorel.github.io/the-client-case/Teksten.html
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Hieronder vind je screenshots van hoe de huidige website van dit project er uit ziet.
+
+![image](https://user-images.githubusercontent.com/112857487/195817370-ea39f27d-8c30-480e-820a-b3897fd0ce47.png)
+
+![image](https://user-images.githubusercontent.com/112857487/195818145-0a518d73-b827-4c69-9ab9-efa2de85baf5.png)
+
+![image](https://user-images.githubusercontent.com/112857487/195817877-b9a21d4c-d5b3-4a4b-a5cf-31ae75d049c2.png)
+
+![image](https://user-images.githubusercontent.com/112857487/195817703-6f98ed24-6d2d-45b2-80c4-ebde94ef634d.png)
+
+![image](https://user-images.githubusercontent.com/112857487/195817798-9dffa3b2-8239-47e6-928a-8fdd840a1029.png)
+
+
+
+Deze pagina is te vinden onder: https://wesleyschorel.github.io/the-client-case/Afbeeldingen.html
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
-
-
+De website bestaat voor het grootste deel uit HTML, een groot deel uit CSS en er is een klein beetje gebruik gemaakt van JavaScript.
 
 ## Bronnen
+https://www.vervoerregio.nl/
+https://wcag.nl/kennisbank/
 
-## Licentie
 
-![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
-
-This work is licensed under [GNU GPLv3](./LICENSE).

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Vervoerregio Amsterdam</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="Afbeeldingen.html"><i class="fa fa-fw fa-photo"></i> Afbeeldingen</a>
+        <a href="Bediening.html"><i class="fa fa-fw fa-keyboard-o"></i> Bediening</a>
+        <a href="Formulieren.html"><i class="fa fa-fw fa-user"></i> Formulieren</a>
+        <a href="Media.html"><i class="fa fa-fw fa-file-image-o"></i> Media</a>
+        <a href="Navigatie.html"><i class="fa fa-fw fa-mouse-pointer"></i> Navigatie</a>
+        <a href="Ontwerp.html"><i class="fa fa-fw fa-paint-brush"></i> Ontwerp</a>
+        <a href="Teksten.html"><i class="fa fa-fw fa-book"></i> Teksten</a>
+    </div>
+
+    <div class="main">
+        <main>
+
+            <div class="topright">
+                <button onclick="myFunction()">Contrast</button>
+            </div>
+
+            <img src="assets/Logo.png" alt="Logo">
+            <p>Verklaring Digitale toegankelijkheid | Afbeeldingen
+                <br>
+                <hr><br>
+                Content van een website dat niet uit tekst bestaat, zoals foto’s, icoontjes en andere afbeeldingen,
+                kan toegankelijk worden gemaakt door deze ook als tekst beschikbaar te maken. Tekst kan namelijk
+                door hulptechnologieën op verschillende manieren worden gepresenteerd. Voorleessoftware kan een
+                tekst omzetten in spraak (auditief) en een brailleleesregel kan het vertalen naar braille (tactiel).
+                Zo worden afbeelding ook toegankelijk voor bezoekers die de afbeelding niet kunnen waarnemen.
+                <br><br>
+                De invulling van zo’n tekstalternatief is afhankelijk van de context van de afbeelding en kan per
+                situatie zelfs verschillen voor dezelfde afbeelding.
+                <br><br>
+            </p>
+            <button class="accordion">Zorg dat afbeeldingen in de code een tekstalternatief kunnen krijgen</button>
+            <div class="panel">
+                <p>Alle afbeeldingen moeten een tekstalternatief hebben. Een tekstalternatief kan op verschillende
+                    manieren worden toegevoegd:</p>
+                <h2>Tekstalternatief voor een <code>&ltimg&gt</code>-element</h2>
+                <p>Bij een <code>&ltimg&gt</code>-element wordt een tekstalternatief gegeven met behulp van het
+                    <code>alt</code>-attribuut.
+
+                    <br><br>In de code ziet dat er zo uit:
+                <pre>
+
+ 1 | &ltimg src="hond.jpg" alt="Hond speelt met een bal"&gt
+                        </pre>
+                </p>
+
+                <h2>Tekstalternatief voor een <code>&ltsvg&gt</code>-element</h2>
+                <p>Bij een <code>&ltsvg&gt</code>-element wordt een tekstalternatief gegeven met behulp van het
+                    <code>title</code>-element in
+                    de
+                    svg. Gebruik ook aria-attribuut <code>role="img"</code> om ervoor te zorgen dat zo veel mogelijk
+                    ondersteunende technologieën het <code>&ltsvg&gt</code>-element herkennen als een afbeelding.
+
+                    <br><br>In de code ziet dat er zo uit:
+                </p>
+                <pre>
+
+ 1 | &ltsvg role="img"&gt
+ 2 | &lttitle&gtHond speelt met een bal&lt/title&gt
+ 3 | ...
+ 4 | &lt/svg&gt
+                                </pre>
+
+                <h2>Tekstalternatief voor afbeeldingen die is geplaatst met CSS</h2>
+                <p>Aan een afbeelding die geplaatst is met CSS kan een tekstalternatief worden gegeven met een
+                    <code>aria-label</code>.
+
+                    <br><br>In de code ziet dat er zo uit:
+
+                <pre>
+
+ 1 | &ltdiv id=”logo” aria-label=”Hond speelt met een bal”&gt&lt/div&gt
+                        </pre>
+                </p>
+
+                <h2>Invulling van het Tekstalternatief</h2>
+                <p>De invulling van een tekstalternatief wordt bepaald door de functie die een afbeelding heeft. In
+                    veel
+                    gevallen draagt een afbeelding informatie over. Beschrijf dan in het tekstalternatief wat er op
+                    de
+                    afbeelding te zien is. Bij een afbeelding die ook een link is, gaat het juist om het beschrijven
+                    waar de link naar toe verwijst. Als een afbeelding geen informatie aan de pagina toevoegt, dan
+                    is
+                    het beter om het helemaal geen tekstalternatief te geven zodat het kan worden genegeerd door
+                    hulptechnologieën.</p>
+            </div>
+            <br>
+            <button class="accordion">Geef afbeeldingen die informatie overdragen een beschrijvend
+                tekstalternatief</button>
+            <div class="panel">
+                <p>Afbeeldingen die informatie overbrengen zijn noodzakelijk voor het begrijpen van de tekst. De
+                    afbeeldingen voegen extra informatie toe aan de pagina. Deze afbeeldingen moeten een
+                    tekstalternatief hebben dat nauwkeurig beschrijft wat er op de afbeelding te zien is. De
+                    invulling
+                    is afhankelijk van de context en kan per situatie afwijkend zijn voor dezelfde afbeelding.
+
+                    <br><br>In een CMS kan een tekstalternatief doorgaans worden toegevoegd in de mediatheek.
+
+                    <br><br>In de code ziet dat er zo uit:
+                <pre>
+
+ 1 | &ltimg src="poes.jpg" alt="Witte poes speelt met een rode bal"&gt
+                        </pre>
+                </p>
+
+
+                <p>Het tekstalternatief moet een goede vervanging kunnen zijn voor een afbeelding. Bedenk bij het
+                    schrijven van het tekstalternatief altijd wat de bedoeling is van de afbeelding. Houd een
+                    tekstalternatief altijd nuttig en beknopt.</p>
+            </div>
+            <br>
+            <button class="accordion">Geef complexe afbeeldingen een langere beschrijving</button>
+            <div class="panel">
+                <p>Soms is het niet mogelijk om een afbeelding volledig te beschrijven in een kort tekstalternatief.
+                    Bijvoorbeeld als het gaat om een uitgebreide infographic of een grafiek. Dit soort complexe
+                    afbeeldingen moeten ook volledig worden beschreven in een tekstalternatief. Geef in dat geval
+                    naast
+                    een beknopte beschrijving in het <code>alt</code>-attribuut ook een langere beschrijving in de
+                    omringende
+                    tekst.
+
+                <pre>
+
+ 1 | &ltimg src="grafiek.jpg" alt="Verkoopcijfers zijn in 2021 met 18% gestegen"&gt
+ 2 | &ltdiv&gt
+ 3 |   &ltp&gtDe groei van maandelijkse verkopen in 2021 tegen 2020 verliep als volgt:&lt/p&gt
+ 4 |     &ltul&gt
+ 5 |     &ltli&gtJanuari: +22%&lt/li&gt
+ 6 |     &ltli&gt...
+ 7 | &lt/div&gt
+                        </pre>
+
+                <br>Een langere beschrijving mag ook op een aparte pagina worden geplaatst. Plaats dan een
+                link met
+                de
+                verwijzing naar die andere pagina direct voor of na de afbeelding.
+                <pre>
+
+ 1 | &ltimg src="grafiek.jpg" alt="Verkoopcijfers zijn in 2021 met 18% gestegen"&gt
+ 2 | &lta href=”/langere-beschrijving.html”&gtUitgebreide beschrijving van de grafiek 
+ 3 | met verkoopcijfers&lt/a&gt
+                        </pre>
+                <br><br>De omringende tekst hoort ook te worden gekoppeld aan de afbeelding. Dit is geen
+                verplichting
+                maar wel erg handig. Hiervoor kan gebruik worden gemaakt van het
+                <code>aria-describedby</code>-attribuut.
+                Gebruik
+                het
+                <code>ID</code> van het element waar de complexe afbeelding beschreven wordt. Deze informatie
+                hoort dan ook
+                zichtbaar
+                te zijn voor bezoekers die wel kunnen zien.
+                </p>
+                <pre>
+
+ 1 | &ltimg src="grafiek.jpg" alt="Verkoopcijfers zijn in 2020 met 18% gestegen" 
+ 2 | aria-describedby="beschrijving"&gt
+ 3 | &ltdiv id="beschrijving"&gt
+ 4 |   &ltp&gtDe groei van maandelijkse verkopen in 2020 tegen 2019 verliep als volgt:&lt/p&gt
+ 5 |     &ltul&gt
+ 6 |     &ltli&gtJanuari: +22%&lt/li&gt
+ 7 |     &ltli&gt...
+                    </pre>
+            </div>
+            <br>
+            <button class="accordion">Geef afbeeldingen die ook een link zijn een tekstalternatief dat het doel van
+                de
+                link beschrijft</button>
+            <div class="panel">
+                <p>In de gevallen dat niet tekst maar alleen een afbeelding als link wordt gebruikt, spreken we over
+                    functionele afbeeldingen. Dit kunnen afbeeldingen zijn die verwijzen naar een andere pagina of
+                    website, maar ook afbeeldingen die een actie op de pagina uitvoeren.
+
+                    <br><br>Deze afbeeldingen moeten een tekstalternatief hebben dat het doel van de link
+                    beschrijft,
+                    of die beschrijft wat er gebeurd als op de afbeelding wordt geklikt. Voorleessoftware gebruikt
+                    het
+                    tekstalternatief namelijk als linktekst. Daarom is het belangrijker om het doel van de link te
+                    beschrijven, in plaats van wat er op de afbeelding te zien is.
+
+                    <br><br>Als er ook tekst staat op een functionele afbeelding, dan moeten de tekst op de
+                    afbeelding
+                    én het doel van de link allebei in het tekstalternatief worden vermeld. Hierdoor kunnen
+                    bezoekers
+                    die met spraakherkenning werken de link ook makkelijk bereiken.
+                </p>
+                <pre class="infobackground">
+<i class="fa fa-fw fa-book"></i>Zo is ‘Ga naar Twitter.com’ een beter tekstalternatief dan ‘Kleine witte vogel op een 
+lichtblauwe achtergrond’ als het gaat om een afbeelding die wordt gebruikt als 
+link naar een Twitter.com.</pre>
+                <pre>
+
+ 1 | &lta href=”categorie/spelletjes.html”&gt
+ 2 |   &ltimg src="monopoly.jpg" alt="Ga naar de categorie spelletjes" /&gt
+ 3 | &lt/a&gt
+                </pre>
+            </div>
+            <br>
+            <button class="accordion">Zorg dat decoratieve afbeeldingen door hulptechnologieën genegeerd kunnen
+                worden</button>
+            <div class="panel">
+                <p>Afbeeldingen die puur ter decoratie op de pagina zijn geplaatst, horen geen tekstalternatief te
+                    hebben. Dit zijn bijvoorbeeld afbeeldingen die geen informatie overdragen en niet noodzakelijk
+                    zijn
+                    voor het begrijpen van de tekst. Deze afbeeldingen moeten worden genegeerd door
+                    hulptechnologieën.
+                    Decoratieve afbeeldingen kunnen het best met CSS worden geplaatst.
+                <pre>
+
+ 1 | &ltdiv class="line"&gt&lt/div&gt
+                        </pre>
+                <pre>
+
+ 1 | .line {
+ 2 |   background-image: url("horizontale-lijn.jpg");
+ 3 | }
+                        </pre>
+                <br>
+                Als het niet mogelijk is om een decoratieve afbeelding met CSS te plaatsen, dan moet het
+                <code>alt</code>-attribuut in het <code>&ltimg&gt</code>-element worden leeg gelaten. Het
+                <code>alt</code>-attribuut moet wel aanwezig
+                zijn
+                maar het heeft dan geen tekst.
+                </p>
+                <pre>
+
+ 1 | &ltimg src="horizontale-lijn.jpg" alt="" /&gt
+                    </pre>
+            </div>
+            <br>
+            <button class="accordion">Gebruik geen afbeeldingen van tekst</button>
+            <div class="panel">
+                <p>Gebruik geen afbeeldingen van tekst om informatie over te dragen. Afbeeldingen van tekst zijn
+                    voor
+                    sommige bezoekers niet handig. De lettergrootte in een afbeelding schaalt namelijk vaak niet
+                    goed
+                    mee. Ook kunnen bezoekers tekst die is ingebakken in een afbeelding niet aanpassen naar eigen
+                    voorkeuren.
+
+                    <br><br>Gebruik daarom ‘echte’ tekst. Tekst die daadwerkelijk als tekst op de pagina staat kan
+                    goed worden vormgegeven met CSS. Hiermee kan bijvoorbeeld de kleur, het lettertype, de
+                    lettergrootte, de regelhoogte en de letterafstand en worden ingesteld. Eventueel kan tekst met
+                    CSS
+                    ook bovenop een afbeelding worden geplaatst.
+                </p>
+            </div>
+            <br>
+            <button class="accordion">Zorg dat bewegende content kan worden gepauzeerd, gestopt of worden
+                uitgezet</button>
+            <div class="panel">
+                <p>Zorg dat alle bewegende, scrollende of knipperende content dat automatisch start én langer dan 5
+                    seconden duurt kan worden gepauzeerd, gestopt of worden uitgezet. Onder bewegende, scrollende of
+                    knipperende content vallen onder andere carrousels, animaties op de pagina, bewegende
+                    advertenties,
+                    enz. Bezoekers met een cognitieve beperking kunnen er door worden afgeleid. Ook voor bezoekers
+                    die
+                    gebruik maken van een schermlezer kan dit storend zijn.
+
+                    <br><br>Deze regels gelden ook alle automatisch verversende content, maar hiervoor geldt ook de
+                    frequentie van updates mag worden aangepast.
+                </p>
+            </div>
+            <br>
+            <button class="accordion">Gebruik geen content dat meer dan 3 keer per seconde flitst</button>
+            <div class="panel">
+                <p>Gebruik geen flitsende content. Laat onderdelen in elk geval niet meer dan 3 keer per seconde
+                    flitsen. Bezoekers met bepaalde vormen van epilepsie kunnen een aanval krijgen als ze kijken
+                    naar
+                    knipperende of flitsende afbeeldingen of media.</p>
+            </div>
+        </main>
+        <footer>
+            <div id="feedback-button">Vond u deze pagina nuttig?</div>
+            <button onclick="myFunction()" type="button" name="ja-nee-button">Ja</button>
+            <button onclick="myFunction()" type="button" name="ja-nee-button">Nee</button>
+        </footer>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+
+
+
+            function myFunction() {
+                var x = document.getElementById("feedback-button");
+                if (x.innerHTML === "Bedankt voor uw feedback.") {
+                    x.innerHTML = "Vond u deze pagina nuttig?";
+                } else {
+                    x.innerHTML = "Bedankt voor uw feedback.";
+                }
+            }
+        </script>
+
+<script src="scripts/script.js"></script>
+
+</body>
+
+</html>
