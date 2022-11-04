@@ -51,14 +51,14 @@ img.right {
   float: right; 
   margin: 0.5em 0 1em 1em; 
   clear: right; 
-  width: 28em;
+  width: 24em;
 }
 
 img.left { 
   float: left; 
   margin: 0.5em 0 1em 1em; 
   clear: left; 
-  width: 28em;
+  width: 24em;
 }
 
 hr {
