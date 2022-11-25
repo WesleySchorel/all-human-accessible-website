@@ -228,8 +228,9 @@ button:hover {
   background: #444444;
   color: #fff;
   padding: 20px; 
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  width: 100%;
 }
 
 ul {
