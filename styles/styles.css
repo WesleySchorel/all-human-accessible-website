@@ -62,7 +62,7 @@ ul {
 
 @media all and (min-width: 600px) {
   article{
-    width: 70vw;
+    width: 75vw;
     margin: 0 auto;
     padding: 40px;
     margin: 0 auto;
@@ -70,6 +70,8 @@ ul {
     line-height: 1.6;
   }
 }
+
+/* NAVBAR DESKTOP */
 
 .navbar {
   background: #fff;
@@ -246,6 +248,7 @@ li{
 a {
   color: white;
 }
+
 
 
 
