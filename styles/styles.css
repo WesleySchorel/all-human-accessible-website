@@ -109,6 +109,15 @@ ul {
 }
 
 
+.kennisbank-article {
+  flex: 1;
+  background-color: white;
+  color: var(--global-text);
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  padding: 15px 20px;
+}
+
 article button:hover {
   background: var(--accordion-hover);
 }
@@ -158,7 +167,7 @@ article button:hover {
 
 /* MOBILE NAV*/
 
-.my-sticky-footer {
+.mobile-navbar {
   text-align: center;
   background: var(--mobile-navbar);
   color: #fff;
@@ -290,7 +299,7 @@ button:hover {
     display: none;
   }
 
-  .my-sticky-footer {
+  .mobile-navbar {
     display: none;
   }
 }
@@ -332,7 +341,7 @@ button:hover {
 
 .panel {
   padding: 0 18px;
-  background-color: white;
+  background-color: var(--background);
   border-radius: 0 0 1rem 1rem;
   max-height: 0;
   overflow: hidden;
