@@ -90,7 +90,7 @@ ul {
   article {
     width: 90vw;
     margin: 0 auto;
-    /* padding: 40px; */
+    padding: 35px; 
     margin: 0 auto;
     font-size: 18px;
     line-height: 1.6;
@@ -101,7 +101,7 @@ ul {
   article {
     width: 75vw;
     margin: 0 auto;
-    padding: 40px;
+    padding: 35px;
     margin: 0 auto;
     font-size: 18px;
     line-height: 1.6;
@@ -130,7 +130,7 @@ article button:hover {
   height: 75px;
   position: sticky;
   top: 0;
-  border: 1px solid;
+  box-shadow: var(--box-shadow);
   padding: 10px;
 }
 
@@ -261,6 +261,12 @@ button:hover {
 
 .box i {
   margin-right: 10px;
+}
+
+.box:hover {
+ /* margin: -0.1px; */
+ background: white;
+ color: black;
 }
 
 @media (max-width: 768px) {
