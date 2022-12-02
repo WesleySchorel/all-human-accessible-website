@@ -359,3 +359,15 @@ code {
   background: #88888853;
   border: 1px solid;
 }
+
+
+
+
+
+footer {
+  text-align: center;
+}
+
+#feedback-button{
+  margin: 22px;
+}

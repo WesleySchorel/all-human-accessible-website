@@ -17,3 +17,12 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+function myFeedback() {
+  var x = document.getElementById("feedback-button");
+  if (x.innerHTML === "Bedankt voor uw feedback.") {
+      x.innerHTML = "Vond u deze pagina nuttig?";
+  } else {
+      x.innerHTML = "Bedankt voor uw feedback.";
+  }
+}
