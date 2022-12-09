@@ -1,8 +1,10 @@
+/* DARK MODE */
 function myFunction() {
     var element = document.body;
     element.classList.toggle("dark-mode");
  }
 
+ /* ACCORDION */
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -18,6 +20,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+/* FEEDBACK BUTTON */
 function myFeedback() {
   var x = document.getElementById("feedback-button");
   if (x.innerHTML === "Bedankt voor uw feedback.") {
@@ -26,3 +29,24 @@ function myFeedback() {
       x.innerHTML = "Bedankt voor uw feedback.";
   }
 }
+
+/* RICHTLIJNEN DIALOG */
+
+let button = document.getElementById('selecteer-richtlijn-button')
+var dialogRichtlijnen = document.querySelector('#selecteer-richtlijn-dialog')
+
+button.addEventListener('click', function() {
+  dialogRichtlijnen.showModal()
+})
+
+dialogRichtlijnen.addEventListener('submit', function() {
+  var selectThingy = document.querySelector('select')
+  location.href = selectThingy.value
+})
+
+
+
+
+
+
+
