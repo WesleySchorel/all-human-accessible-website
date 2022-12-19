@@ -41,7 +41,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
+  scroll-margin: 5rem;
 }
 
 h1 {
@@ -295,7 +295,7 @@ label {
 }
 
 dialog::backdrop {
-  background: #e3005b3a;
+  background: #0000003a;
   backdrop-filter: blur(5px);
 }
 
