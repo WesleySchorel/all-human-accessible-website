@@ -41,6 +41,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 h1 {
@@ -328,11 +329,6 @@ select {
 #selecteer-richtlijn-dialog {
   margin: auto;
 }
-
-
-
-
-
 
 
 @media all and (max-width: 600px) {
