@@ -169,13 +169,13 @@ article button:hover {
   margin-left: 20px;
 }
 
-/* MOBILE NAV*/
+/* NAVBAR MOBILE */
 
 .mobile-navbar {
   text-align: center;
   background: var(--mobile-navbar);
   color: #fff;
-  padding: 20px;
+  padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
