@@ -208,6 +208,12 @@ ul {
   justify-content: space-between;
 }
 
+@media (min-width: 1024px) {
+  .mobile-navbar {
+    display: none;
+  }
+}
+
 /* li {
   padding: 5px 10px;
 } */
@@ -439,11 +445,9 @@ select {
   .desktophide {
     display: none;
   }
-
-  .mobile-navbar {
-    display: none;
-  }
 }
+
+
 
 
 
