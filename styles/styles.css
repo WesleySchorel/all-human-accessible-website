@@ -414,3 +414,39 @@ footer {
 #feedback-button {
   margin: 22px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.progressbar-container {
+  width: 100%;
+  margin: 20px 0;
+  background-color: #DDDDDD;
+  }
+  
+  .progressbar {
+  background-color: #25AE93;
+  height: 20px;
+  transition: width 0.5s ease;
+  }
+  
+  li {
+  list-style: none;
+  margin: 10px 0;
+  }
+  
+  input[type=checkbox] {
+  margin-right: 10px;
+  }
