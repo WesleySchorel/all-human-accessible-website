@@ -51,7 +51,14 @@
       <li><input type="checkbox" id="item3" /> Aanpasbaar</li>
       <li><input type="checkbox" id="item4" /> Onderscheidbaar</li>
     </ol>
+
+    <div class="checklis-buttons">
+      <button class="checklistbutton">Restart</button>
+      <button class="test">Volgende</button>
+    </div>
   </article>
+
+
 
   <div class="mobile-navbar">
     <ul>
@@ -88,18 +95,31 @@
     </ul>
   </div>
 
+
+
 </body>
 
 <script src="scripts/script.js" defer></script>
 <script>
   var items = document.querySelectorAll("input[type=checkbox]");
 
+  // test
+  let test = document.querySelector('.test');
+
   for (var i = 0; i < items.length; i++) {
     items[i].addEventListener("click", function () {
       var completed = document.querySelectorAll("input[type=checkbox]:checked").length;
       var progress = (completed / items.length) * 100;
+      console.log(progress)
       var progressbar = document.querySelector(".progressbar");
       progressbar.style.width = progress + "%";
+
+      // check if progress = 100%
+      if (progress == 100) {
+        test.classList.add('test-show');
+      }else{
+        test.classList.remove('test-show')
+      }
     });
   }
 </script>
