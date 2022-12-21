@@ -38,7 +38,7 @@
   <br>
 
   <article class="checklist-article">
-    <h2>Waarneembaar. Principe 1</h2>
+    <h2>Bedienbaar. Principe 2</h2>
     <p>Verklaring Digitale toegankelijkheid | Waarneembaar
       <br>
       <hr>
@@ -46,15 +46,16 @@
       <div class="progressbar" style="width: 0%; height: 20px;"></div>
     </div>
     <ol>
-      <li><label><input type="checkbox" id="item1" /> Tekstalternatieven</label></li>
-      <li><label><input type="checkbox" id="item2" /> Op tijd gebaseerde media</label></li>
-      <li><label><input type="checkbox" id="item3" /> Aanpasbaar</label></li>
-      <li><label><input type="checkbox" id="item4" /> Onderscheidbaar</label></li>
+      <li><label><input type="checkbox" id="item1" /> Toetsenbordtoegankelijk</label></li>
+      <li><label><input type="checkbox" id="item2" /> Genoeg tijd</label></li>
+      <li><label><input type="checkbox" id="item3" /> Toevallen en fysieke reacties</label></li>
+      <li><label><input type="checkbox" id="item4" /> Navigeerbaar</label></li>
+      <li><label><input type="checkbox" id="item5" /> Input Modaliteiten</label></li>
     </ol>
 
     <div class="checklis-buttons">
       <button class="checklistbutton">Restart</button>
-      <button class="test" onclick="location.href='checklist-bedienbaar.html';">Volgende</button>
+      <button class="test">Volgende</button>
     </div>
   </article>
 
@@ -101,17 +102,17 @@
 
 <script src="scripts/script.js" defer></script>
 <script>
-  let items = document.querySelectorAll("input[type=checkbox]");
+  var items = document.querySelectorAll("input[type=checkbox]");
 
   // test
   let test = document.querySelector('.test');
 
-  for (let i = 0; i < items.length; i++) {
+  for (var i = 0; i < items.length; i++) {
     items[i].addEventListener("click", function () {
-      let completed = document.querySelectorAll("input[type=checkbox]:checked").length;
-      let progress = (completed / items.length) * 100;
+      var completed = document.querySelectorAll("input[type=checkbox]:checked").length;
+      var progress = (completed / items.length) * 100;
       console.log(progress)
-      let progressbar = document.querySelector(".progressbar");
+      var progressbar = document.querySelector(".progressbar");
       progressbar.style.width = progress + "%";
 
       // check if progress = 100%
