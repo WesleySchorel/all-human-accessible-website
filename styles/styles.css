@@ -110,6 +110,16 @@ ul {
   }
 }
 
+/* .kennisbank-article {
+  flex: 1;
+  width: 75vw;
+  background-color: white;
+  color: var(--global-text);
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  padding: 15px 20px;
+} */
+
 .kennisbank-article {
   flex: 1;
   width: 75vw;
@@ -120,6 +130,17 @@ ul {
   padding: 15px 20px;
 }
 
+@media all and (max-width: 600px) {
+  .kennisbank-article {
+    flex: 1;
+    width: 90vw;
+    background-color: white;
+    color: var(--global-text);
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    padding: 15px 20px;
+  }
+}
 
 article button:hover {
   background: var(--accordion-hover);
