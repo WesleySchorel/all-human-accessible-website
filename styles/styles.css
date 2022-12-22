@@ -57,7 +57,7 @@ h3 {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1,
@@ -286,6 +286,20 @@ a {
   border-color: var(--c-magenta);
 }
 
+.startchecklistbutton {
+  color: #ffff;
+  background-image: var(--header-gradient);
+  border-radius: 12px;
+  width: 100%;
+}
+
+.startchecklistbutton:hover {
+  color: var(--c-magenta);
+  background-color: #ffff;
+  border-radius: 12px;
+  border-color: var(--c-magenta);
+}
+
 @media (max-width: 600px) {
   .checklistbutton {
     color: #ffff;
@@ -316,6 +330,10 @@ input[type="checkbox"]{
   border-radius: 12px;
   box-shadow: var(--box-shadow);
   padding: 15px 20px;
+}
+
+.checklist-article-tekst {
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 600px) {

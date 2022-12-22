@@ -38,12 +38,23 @@
   <br>
 
   <article class="checklist-article">
-    <div class="checklist-article-tekst">
-    <h1>Toegankelijkheids Test</h1>
-    <p>Volg de door ons gemaakte checklist om na te lopen of uw website voldoet aan alle Toegankelijkheids Principes.</p>
+    <h2>Waarneembaar. Principe 1</h2>
+    <p>Verklaring Digitale toegankelijkheid | Waarneembaar
+      <br>
+      <hr>
+    <div class="progressbar-container">
+      <div class="progressbar" style="width: 0%; height: 20px;"></div>
     </div>
+    <ol>
+      <li><label><input type="checkbox" id="item1" /> Tekstalternatieven</label></li>
+      <li><label><input type="checkbox" id="item2" /> Op tijd gebaseerde media</label></li>
+      <li><label><input type="checkbox" id="item3" /> Aanpasbaar</label></li>
+      <li><label><input type="checkbox" id="item4" /> Onderscheidbaar</label></li>
+    </ol>
+
     <div class="checklis-buttons">
-      <button class="startchecklistbutton" onclick="location.href='checklist-waarneembaar.html';">Start de checklist</button>
+      <button class="checklistbutton" onclick="location.href='checklist.html';">Herstart</button>
+      <button class="test" onclick="location.href='checklist-bedienbaar.html';">Volgende</button>
     </div>
   </article>
 
@@ -89,5 +100,28 @@
 </body>
 
 <script src="scripts/script.js" defer></script>
+<script>
+  let items = document.querySelectorAll("input[type=checkbox]");
+
+  // test
+  let test = document.querySelector('.test');
+
+  for (let i = 0; i < items.length; i++) {
+    items[i].addEventListener("click", function () {
+      let completed = document.querySelectorAll("input[type=checkbox]:checked").length;
+      let progress = (completed / items.length) * 100;
+      console.log(progress)
+      let progressbar = document.querySelector(".progressbar");
+      progressbar.style.width = progress + "%";
+
+      // check if progress = 100%
+      if (progress == 100) {
+        test.classList.add('test-show');
+      }else{
+        test.classList.remove('test-show')
+      }
+    });
+  }
+</script>
 
 </html>
