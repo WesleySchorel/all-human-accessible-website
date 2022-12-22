@@ -580,6 +580,39 @@ footer {
     resize: none;
   }
 
+  label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.submit {
+color: #ffff;
+background-image: var(--header-gradient);
+border-radius: 12px;
+width: 14rem;
+}
+
+.submit:hover {
+color: var(--c-magenta);
+background-color: #ffff;
+border-radius: 12px;
+border-color: var(--c-magenta);
+}
+
+@media (max-width: 600px) {
+.submit {
+color: #ffff;
+background-image: var(--header-gradient);
+border-radius: 12px;
+width: 100%;
+}
+}
 
 /* BACK TO TOP */
 
