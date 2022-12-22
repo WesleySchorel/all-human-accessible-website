@@ -37,6 +37,11 @@
   --footer: #444444;
 }
 
+/* DARKMODE
+html {
+  filter: invert(100%) hue-rotate(180deg);
+} */
+
 * {
   box-sizing: border-box;
   margin: 0;
