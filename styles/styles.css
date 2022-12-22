@@ -453,6 +453,8 @@ select {
 }
 
 
+/* MOBILE EN DEKSTOP CONTENT */
+
 @media (max-width: 600px) {
   .mobilehide {
     display: none;
@@ -468,7 +470,7 @@ select {
 
 
 
-
+/* ACCORDIONS */
 
 .accordion {
   background-color: var(--accordion);
@@ -525,7 +527,7 @@ code {
 
 
 
-
+/* FOOTER */
 
 footer {
   text-align: center;
@@ -548,7 +550,7 @@ footer {
 
 
 
-
+/* PROGRESSBAR  */
 
 .progressbar-container {
   width: 100%;
@@ -571,6 +573,31 @@ footer {
   margin-right: 10px;
   }
 
+
+/* FORMULIER */
+
   textarea {
     resize: none;
   }
+
+
+/* BACK TO TOP */
+
+.top{
+  width: 70px;
+  height: 70px;
+  background: #444444;
+  border-radius: 50%;
+  position: fixed;
+  bottom:20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .top {
+    display: none;
+  }
+}
