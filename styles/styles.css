@@ -45,7 +45,7 @@
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 32px;
 }
 
 h2 {
@@ -146,6 +146,18 @@ ul {
     padding: 15px 20px;
   }
 }
+
+.over-de-ontwikkelaar-article {
+  flex: 1;
+  width: 55vw;
+  background-color: white;
+  color: var(--global-text);
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  padding: 15px 20px;
+}
+
+
 
 article button:hover {
   background: var(--accordion-hover);
@@ -335,6 +347,12 @@ input[type="checkbox"]{
   border-radius: 12px;
   box-shadow: var(--box-shadow);
   padding: 15px 20px;
+}
+
+@media (min-width: 1024px) {
+  .checklist-article {
+    margin-bottom: 21rem;
+  }
 }
 
 .checklist-article-tekst {
@@ -701,6 +719,10 @@ footer {
   color: #fff;
   padding: 15px 20px;
   height: 11rem;
+}
+
+footer a {
+  color: var(--c-white);
 }
 
 .footer {  display: grid;
