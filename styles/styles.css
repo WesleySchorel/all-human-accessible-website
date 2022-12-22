@@ -634,3 +634,27 @@ width: 100%;
     display: none;
   }
 }
+
+
+
+
+/* CUSTOM SCROLLBAR W3 SCHOOLS */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #DDDDDD; 
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: #444444; 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
