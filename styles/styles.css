@@ -570,3 +570,7 @@ footer {
   input[type=checkbox] {
   margin-right: 10px;
   }
+
+  textarea {
+    resize: none;
+  }
