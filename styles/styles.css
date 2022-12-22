@@ -219,7 +219,7 @@ ul {
 } */
 
 a {
-  color: white;
+  color: var(--global-text);
 }
 
 /* HEADER */
